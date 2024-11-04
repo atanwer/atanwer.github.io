@@ -5,7 +5,7 @@ const downloadButtons = document.querySelectorAll('.download-cv-btn');
 downloadButtons.forEach(function (button) {
   button.addEventListener('click', function () {
     // Set the path to your CV file in the "documents" folder
-    var cvFilePath = 'documents/AkaleshT_Full_Stack_3yrs.docx';
+    var cvFilePath = 'documents/AkaleshT_Full_Stack_3yrs.pdf';
 
     // Create a temporary anchor element
     var link = document.createElement('a');
@@ -14,7 +14,7 @@ downloadButtons.forEach(function (button) {
     link.href = cvFilePath;
 
     // Set the download attribute to specify the filename when the user downloads the file
-    link.download = 'AkaleshT_Full_Stack_3yrs.docx';
+    link.download = 'AkaleshT_Full_Stack_3yrs.pdf';
 
     // Append the link to the document body
     document.body.appendChild(link);
