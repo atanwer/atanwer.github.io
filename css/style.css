@@ -1,9 +1,3 @@
-/*!
- * Bootstrap v4.3.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -13911,7 +13905,8 @@ textarea.form-control {
 
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
 }
@@ -13971,4 +13966,41 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
   }
+}
+
+.skills-item {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffbd39;
+}
+
+.skills-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(255, 189, 57, 0.3);
+  background-color: #2a2a2a;
+}
+
+.skills-icon {
+  font-size: 3rem;
+  color: #ffbd39;
+  margin-bottom: 15px;
+}
+
+.skills-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+#skills-section {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+#skills-section .heading-section p {
+  color: #cccccc;
 }
