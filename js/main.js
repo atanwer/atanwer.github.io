@@ -43,15 +43,26 @@ AOS.init({
 
 
 
-	// Burger Menu
 	const burgerMenu = function () {
-		document.querySelector('.js-fh5co-nav-toggle').addEventListener('click', function (event) {
-			event.preventDefault();
-			const nav = document.getElementById('ftco-nav');
-			const isVisible = window.getComputedStyle(nav).display !== 'none';
+		const navToggle = document.querySelector('.js-fh5co-nav-toggle');
+		const nav = document.getElementById('ftco-nav');
 
+		// Toggle menu on burger click
+		navToggle.addEventListener('click', function (event) {
+			event.preventDefault();
+			const isVisible = window.getComputedStyle(nav).display !== 'none';
 			this.classList.toggle('active');
 			nav.style.display = isVisible ? 'none' : 'block';
+		});
+
+		// Close menu when clicking outside
+		document.addEventListener('click', function (event) {
+			const isClickInside = nav.contains(event.target) || navToggle.contains(event.target);
+
+			if (!isClickInside && window.getComputedStyle(nav).display === 'block') {
+				nav.style.display = 'none';
+				navToggle.classList.remove('active');
+			}
 		});
 	};
 	burgerMenu();
