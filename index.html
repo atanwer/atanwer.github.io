@@ -609,6 +609,14 @@
               <h3>PostgreSQL</h3>
             </div>
           </div>
+          <div class="col-md-6 col-lg-4 animate-box ftco-animate mb-4">
+            <div class="skills-item text-center">
+              <div class="skills-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3>Supabase</h3>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -629,6 +637,36 @@
           </div>
         </div>
         <div class="row">
+
+          <div class="col-md-12">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">May 2025 – Present</span>
+              <h2>Software Engineer</h2>
+              <span class="position">Techymonks</span>
+              <ul class="mt-3">
+                <li>
+                   Reduced production issues by ~20% across web applications by implementing targeted frontend fixes,
+improving API error handling, and strengthening application stability. 
+                </li>
+                <li>
+                   Improved application performance by optimizing component rendering, reducing unnecessary API requests,
+and enhancing data-fetching workflows, resulting in a smoother user experience. 
+                </li>
+                <li>
+                   Collaborated with backend engineers, product managers, and stakeholders to convert business
+requirements into scalable technical solutions while maintaining consistent sprint delivery timelines.
+                </li>
+                <li>
+                  Facilitated client requirement discussions and technical planning sessions, helping define project scope,
+minimize development rework, and accelerate feature delivery
+                </li>
+                <li>
+                   Built and maintained reusable frontend components using React.js and Next.js, improving code
+maintainability and development efficiency across projects.
+                </li>
+              </ul>
+            </div>
+          </div>
           <!-- Experience 1 -->
           <div class="col-md-12">
             <div class="resume-wrap ftco-animate">
@@ -734,12 +772,32 @@
           <div class="col-md-6">
             <div class="projects">
               <div class="project">
+                <h3 class="mb-4">Buybox Cartel App</h3>
+                <a
+                  href="images/project_samples/screencapture-buyboxcartel-lightning-leads-2026-06-20-12_06_47.png"
+                  class="project-popup"
+                >  
+                <img
+                  src="images/project_samples/screencapture-buyboxcartel-lightning-leads-2026-06-20-12_06_47.png"
+                  alt="Buybox Cartel App Screenshot"
+                />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="projects">
+              <div class="project">
                 <h3 class="mb-4">Abanonya Dating app</h3>
-
+                <a
+                  href="images/project_samples/screencapture-abanonya-frontend-vercel-app-user-2024-05-08-11_25_30.png"
+                  class="project-popup"
+                >
                 <img
                   src="images/project_samples/screencapture-abanonya-frontend-vercel-app-user-2024-05-08-11_25_30.png"
                   alt="Abanonya Dating App Screenshot"
                 />
+                </a>
               </div>
             </div>
           </div>
@@ -747,11 +805,15 @@
             <div class="projects">
               <div class="project">
                 <h3 class="mb-4">Event management system (MECOC)</h3>
-
+                <a
+                  href="images/project_samples/screencapture-mecoc-event-management-admin-vercel-app-dashboard-app-2024-05-08-11_46_12.png"
+                  class="project-popup"
+                >
                 <img
                   src="images/project_samples/screencapture-mecoc-event-management-admin-vercel-app-dashboard-app-2024-05-08-11_46_12.png"
                   alt="MECOC Event Management System Screenshot"
                 />
+                </a>
               </div>
             </div>
           </div>
@@ -759,11 +821,15 @@
             <div class="projects">
               <div class="project">
                 <h3 class="mb-4">Quick Support Services</h3>
-
+                <a
+                  href="images/project_samples/screencapture-quicksupports-in-dashboard-add-form-2024-05-08-11_55_26.png"
+                  class="project-popup"
+                >
                 <img
                   src="images/project_samples/screencapture-quicksupports-in-dashboard-add-form-2024-05-08-11_55_26.png"
                   alt="Quick Support Screenshot"
                 />
+                </a>
               </div>
             </div>
           </div>
@@ -773,12 +839,15 @@
                 <h3 class="mb-4">
                   GYC (Get Your College)- Educational Consulting Portal
                 </h3>
-
-                <a href="https://getyourcollege.in/" target="_blank"
-                  ><img
+                <a
+                  href="images/project_samples/screencapture-getyourcollege-in-2024-05-08-10_50_01.png"
+                  class="project-popup"
+                >
+                  <img
                     src="images/project_samples/screencapture-getyourcollege-in-2024-05-08-10_50_01.png"
                     alt="Get Your College Screenshot"
-                /></a>
+                />
+                </a>
               </div>
             </div>
           </div>
@@ -1069,5 +1138,15 @@
     <script src="js/scrollax.min.js"></script>
 
     <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".project-popup").magnificPopup({
+          type: "image",
+          gallery: {
+            enabled: true,
+          },
+        });
+      });
+    </script>
   </body>
 </html>
