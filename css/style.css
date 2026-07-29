@@ -66,6 +66,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 [tabindex="-1"]:focus {
@@ -13992,6 +13993,77 @@ textarea.form-control {
 @media (max-width: 991px) {
   .video-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .ftco-section {
+    padding: 4rem 0;
+  }
+
+  .hero .text {
+    padding: 1rem 0 2rem;
+  }
+
+  .hero h1,
+  .hero h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero .btn {
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.05rem;
+  }
+
+  .navbar-toggler {
+    padding: 0.4rem 0.6rem;
+  }
+
+  .about-info li {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .about-info li span:first-child {
+    min-width: auto;
+    margin-bottom: 0.2rem;
+  }
+
+  .resume-wrap,
+  .video-card,
+  .project,
+  .skills-item {
+    padding: 1.1rem;
+  }
+
+  .projects,
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .col-md-6,
+  .col-md-12 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .project img {
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .video-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .download-cv-btn {
+    width: 100%;
   }
 }
 
